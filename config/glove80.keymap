@@ -17,6 +17,11 @@
 #define LAYER_MAGIC 2
 #define LAYER_SYMBOL 3
 
+/* To deal with the situation where there is no Lower layer, to keep &lower happy */
+#ifndef LAYER_LOWER
+#define LAYER_LOWER 0
+#endif
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
@@ -28,9 +33,7 @@
             bindings = <&mo LAYER_SYMBOL>, <&to LAYER_SYMBOL>;
         };
     };
-};
 
-/ {
     macros {
         bt_0: bt_profile_macro_0 {
             compatible = "zmk,behavior-macro";
@@ -64,9 +67,7 @@
                   <&bt BT_SEL 3>;
         };
     };
-};
 
-/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -123,5 +124,3 @@
         };
     };
 };
-
-
