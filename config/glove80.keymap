@@ -14,8 +14,8 @@
 // layers
 #define DEFAULT 0
 #define LOWER 1
-#define SYMBOL 2
-#define MAGIC 3
+#define MAGIC 2
+#define SYMBOL 3
 
 / {
     behaviors {
