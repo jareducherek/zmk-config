@@ -96,17 +96,6 @@
             >;
         };
 
-        symbol_layer {
-            bindings = <
-            &none     &none     &none     &none     &none                                                                        &none      &none     &none    &none     &bootloader
-            &kp COMMA &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT  &kp SEMI                                                     &none &none      &none     &none     &none    &none
-            &kp TILDE &kp LBRC  &kp DQT   &kp GRAVE &kp RBRC  &kp QMARK                                                    &none &none      &none     &kp RALT  &none    &none
-            &kp HASH  &kp CARET &kp EQUAL &kp UNDER &kp DLLR  &kp STAR                                                     &none &kp LSHFT  &kp LCTRL &kp LALT  &kp LGUI &none
-            &kp EXCL  &kp LT    &kp PIPE  &kp MINUS &kp GT    &kp FSLH  &kp PRCNT  &kp DOT   &kp STAR &to 0  &to 0  &to 0  &none &none      &none     &none     &none    &none
-            &none     &kp COMMA &kp AMPS  &kp PLUS  &kp SEMI            &kp BSLH   &kp COLON &kp AT   &to 0  &to 0  &none        &none      &none     &none     &none    &sys_reset
-            >;
-        };
-
         magic_layer {
             bindings = <
             &bt BT_CLR        &none               &none           &none           &none                                                                                                           &none      &none      &none      &none      &none
@@ -117,5 +106,18 @@
             &none             &none               &none           &none           &none                           &bt_0     &bt_1     &out OUT_USB     &none     &none     &none                  &none      &none      &none      &none      &none
             >;
         };
+
+        symbol_layer {
+            bindings = <
+            &none     &none     &none     &none     &none                                                                        &none      &none     &none    &none     &bootloader
+            &kp COMMA &kp LBKT  &kp LPAR  &kp RPAR  &kp RBKT  &kp SEMI                                                     &none &none      &none     &none     &none    &none
+            &kp TILDE &kp LBRC  &kp DQT   &kp GRAVE &kp RBRC  &kp QMARK                                                    &none &none      &none     &kp RALT  &none    &none
+            &kp HASH  &kp CARET &kp EQUAL &kp UNDER &kp DLLR  &kp STAR                                                     &none &kp LSHFT  &kp LCTRL &kp LALT  &kp LGUI &none
+            &kp EXCL  &kp LT    &kp PIPE  &kp MINUS &kp GT    &kp FSLH  &kp PRCNT  &kp DOT   &kp STAR &to 0  &to 0  &to 0  &none &none      &none     &none     &none    &none
+            &none     &kp COMMA &kp AMPS  &kp PLUS  &kp SEMI            &kp BSLH   &kp COLON &kp AT   &to 0  &to 0  &none        &none      &none     &none     &none    &sys_reset
+            >;
+        };
     };
 };
+
+
